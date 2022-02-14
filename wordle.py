@@ -427,9 +427,3 @@ if __name__ == '__main__':
                 error = False
         except:
             error = True
-
-        
-        
-        
-        
-        
