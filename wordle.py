@@ -410,27 +410,21 @@ if __name__ == '__main__':
             gui = navigations['-b']
             continue
 
-        elif user_input == '4':
-            solver.reset_yellows()
+        elif user_input in ['4','5']:
+            navigations[user_input]()
             continue
-
-        elif user_input == '5':
-            solver.reset_blacks()
-            continue
-
-            
+          
         try:
             gui = navigations[user_input]
             continue
         except:
             pass
-            
+        
         try:
             gui_action = gui_actions[gui]
             action_success = gui_action(user_input)
             if action_success:
                 error = False
-                continue
         except:
             error = True
 
