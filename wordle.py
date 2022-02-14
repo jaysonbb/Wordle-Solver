@@ -54,7 +54,7 @@ class WordleSolver():
         assert len(val) <= 25
         for char in val:
             assert char in LETTERS
-            assert val not in self.greens
+            assert char not in self.greens
             for seq in self.yellow_sequence:
                 assert char not in seq
                 
