@@ -379,12 +379,18 @@ gui_actions = {
     black_gui: black_gui_action,
 }
 
-gui = navigations['-b']
-error = False
-clear_gui = lambda: os.system('cls')
+
+
+
 
 
 if __name__ == '__main__':
+    
+    clear_gui = lambda: os.system('cls')
+    
+    gui = navigations['-b']
+    error = False
+    
     
     while True:
         clear_gui()
